@@ -1,5 +1,10 @@
+import logging
+from datetime import datetime
+
+
 class Transformer:
     def transform(self, headers, rows):
+        logging.info(f"String transform started: {datetime.now()}")
         records = []
 
         for row in rows:
@@ -29,5 +34,7 @@ class Transformer:
                         'clicks': mt['clicks']
                     }
                 )
+
+        logging.info(f"Number of recycled records: {len(records)}")
 
         return records

@@ -10,4 +10,3 @@ class Pipeline:
 
         Loader().load(records)
 
-Pipeline().run()
