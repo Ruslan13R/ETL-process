@@ -1,9 +1,9 @@
 from openpyxl import load_workbook
-
+import logging
 
 class Extractor:
     def exctract(self):
-        wd = load_workbook('../data/kirby-msk.xlsx')
+        wd = load_workbook('./data/kirby-msk.xlsx')
         ws = wd.active
 
         list_of_rows = []

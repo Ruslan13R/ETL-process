@@ -1,6 +1,6 @@
-from extract import Extractor
-from transform import Transformer
-from loader import Loader
+from etl.extract import Extractor
+from etl.transform import Transformer
+from etl.loader import Loader
 
 
 class Pipeline:
@@ -9,3 +9,5 @@ class Pipeline:
         records = Transformer().transform(headers, rows)
 
         Loader().load(records)
+
+Pipeline().run()
