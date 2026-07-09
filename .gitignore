@@ -2,3 +2,4 @@
 .idea/
 .env
 etl/__pycache__
+ db_etl/__pycache__/

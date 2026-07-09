@@ -4,8 +4,8 @@ from datetime import datetime
 from etl.connection import Connection
 
 
-class Extractor:
-    def extract(self):
+class Extractor_db:
+    def extract_db(self):
         # Подключаемся к БД
         try:
             con = Connection().connect()
@@ -34,4 +34,3 @@ class Extractor:
         con.close()
 
         return res
-

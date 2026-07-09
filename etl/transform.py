@@ -26,7 +26,7 @@ class Transformer:
                     expected = round(mt['clicks'] / mt['shows'] * 100, 1)
                     ctr = mt['ctr']
 
-                    if ctr - expected > 1:
+                    if abs(ctr - expected) > 0.1:
                         logging.warning(f"{mt}: Difference ctr from expected: {ctr - expected}")
                 else:
                     if mt['ctr'] > 0 or mt['clicks'] > 0:
