@@ -16,7 +16,7 @@ class Loader:
         query = '''
             INSERT INTO rdl.webm_excel(dt, page_path, query, demand, impressions, position, clicks)
             VALUES(%s, %s, %s, %s, %s, %s, %s)
-            ON CONFLICT (dt, page_path, query, demand, impressions, position, clicks) DO NOTHING;
+            ON CONFLICT (dt, page_path, query, impressions, clicks) DO NOTHING;
         '''
 
         list_values = []
