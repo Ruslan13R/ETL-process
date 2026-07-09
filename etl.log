@@ -1,8 +1,27 @@
-INFO:root:Start to extract from excel: 2026-07-06 03:10:10.662354
+INFO:root:Start to extract from excel: 2026-07-09 18:19:40.128316
 INFO:root:Lines read and written: 684
-INFO:root:String transform started: 2026-07-06 03:10:11.188482
+INFO:root:String transform started: 2026-07-09 18:19:40.668068
+WARNING:root:{'shows': 41, 'position': 4.6, 'demand': 42, 'ctr': 9.7, 'clicks': 4}: Difference ctr from expected: -0.10000000000000142
+WARNING:root:{'shows': 43, 'position': 6.5, 'demand': 49, 'ctr': 4.6, 'clicks': 2}: Difference ctr from expected: -0.10000000000000053
+WARNING:root:{'shows': 17, 'position': 4.4, 'demand': 17, 'ctr': 11.7, 'clicks': 2}: Difference ctr from expected: -0.10000000000000142
+WARNING:root:{'shows': 7, 'position': 9.2, 'demand': 8, 'ctr': 14.2, 'clicks': 1}: Difference ctr from expected: -0.10000000000000142
+WARNING:root:{'shows': 3, 'position': 7.3, 'demand': 4, 'ctr': 66.6, 'clicks': 2}: Difference ctr from expected: -0.10000000000000853
+WARNING:root:{'shows': 7, 'position': 3.1, 'demand': 7, 'ctr': 14.2, 'clicks': 1}: Difference ctr from expected: -0.10000000000000142
+WARNING:root:{'shows': 3, 'position': 4, 'demand': 3, 'ctr': 66.6, 'clicks': 2}: Difference ctr from expected: -0.10000000000000853
+WARNING:root:{'shows': 3, 'position': 2.3, 'demand': 3, 'ctr': 66.6, 'clicks': 2}: Difference ctr from expected: -0.10000000000000853
+WARNING:root:{'shows': 3, 'position': 3.6, 'demand': 4, 'ctr': 66.6, 'clicks': 2}: Difference ctr from expected: -0.10000000000000853
 INFO:root:Number of recycled records: 9576
-INFO:root:Uploading records to the database (Postgresql): 2026-07-06 03:10:11.209193
-INFO:root:Connect: 2026-07-06 03:10:11.237804
-INFO:root:Start to load records: 2026-07-06 03:10:11.239806
+INFO:root:Uploading records to the database (Postgresql): 2026-07-09 18:19:40.690063
+INFO:root:Connect: 2026-07-09 18:19:40.715866
+INFO:root:Start to load records: 2026-07-09 18:19:40.717864
 INFO:root:Total records: 9576
+INFO:root:Connect: 2026-07-09 18:19:45.917561
+INFO:root:Connect in extract from extract_rdl: 2026-07-09 18:19:45.917561
+INFO:root:крышка двигателя кирби: clicks > impressions
+INFO:root:магазин кирби: clicks > impressions
+INFO:root:kirby пылесос запчасти: clicks > impressions
+INFO:root:насадки производитель пылесоса кирби: clicks > impressions
+INFO:root:уплотнительная горловина кирби с резиновым кольцом: clicks > impressions
+INFO:root:Connect: 2026-07-09 18:19:45.965551
+INFO:root:Done.
+INFO:root:Connect is close.

@@ -1,5 +1,5 @@
 import logging
-
+from etl.connection import Connection
 
 class Loader_db:
     def load_db(self, rec):
