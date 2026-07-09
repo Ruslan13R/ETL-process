@@ -9,13 +9,13 @@ class Loader:
         try:
             con = Connection().connect()
         except Exception as e:
-            logging.error("Error to connect database.")
+            logging.error("Error to connect database. During the loading in database.")
             raise e
 
         cur = con.cursor()
         query = '''
             INSERT INTO rdl.webm_excel(dt, page_path, query, demand, impressions, position, clicks)
-            VALUES(%s, %s, %s, %s, %s, %s, %s)
+            VALUES(%s, %s, %s, %s, %s, %s, %s);
         '''
 
         list_values = []
@@ -43,3 +43,5 @@ class Loader:
             logging.info(f"Total records: {len(list_values)}")
 
         con.commit()
+        cur.close()
+        con.close()

@@ -1,7 +1,8 @@
-INFO:root:Start to extract from excel: 2026-07-05 20:38:26.159492
+INFO:root:Start to extract from excel: 2026-07-06 03:10:10.662354
 INFO:root:Lines read and written: 684
-INFO:root:String transform started: 2026-07-05 20:38:26.774457
+INFO:root:String transform started: 2026-07-06 03:10:11.188482
 INFO:root:Number of recycled records: 9576
-INFO:root:Uploading records to the database (Postgresql): 2026-07-05 20:38:26.851458
-INFO:root:Start to load records: 2026-07-05 20:38:26.909458
+INFO:root:Uploading records to the database (Postgresql): 2026-07-06 03:10:11.209193
+INFO:root:Connect: 2026-07-06 03:10:11.237804
+INFO:root:Start to load records: 2026-07-06 03:10:11.239806
 INFO:root:Total records: 9576

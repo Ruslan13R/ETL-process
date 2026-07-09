@@ -1,5 +1,7 @@
 import os
 import psycopg2
+import logging
+from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -12,12 +14,17 @@ class Connection:
         DB_HOST=os.getenv("DB_HOST")
         DB_PORT=os.getenv("DB_PORT")
 
-        con = psycopg2.connect(
-            dbname=DB_NAME,
-            user=DB_USER,
-            port=DB_PORT,
-            host=DB_HOST,
-            password=DB_PASSWORD
-        )
+        try:
+            con = psycopg2.connect(
+                dbname=DB_NAME,
+                user=DB_USER,
+                port=DB_PORT,
+                host=DB_HOST,
+                password=DB_PASSWORD
+            )
+            logging.info(f"Connect: {datetime.now()}")
+        except Exception as e:
+            logging.error(f"Error connect {e}.")
+            raise e
 
         return con
