@@ -32,7 +32,9 @@ project/
 |
 ├── docker/
 |     └── db/
-|          └── create.sql
+|     |    └── create.sql
+|     |    └── Dockerfile
+|     └── py/
 |          └── Dockerfile
 |
 ├── etl/
